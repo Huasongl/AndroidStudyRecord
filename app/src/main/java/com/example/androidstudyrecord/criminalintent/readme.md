@@ -1,0 +1,13 @@
+# recycler and Fragment List the implement
+
+## Fragment implement 
+
+- create a container layout for Fragment 
+- create a Fragment class 
+- create a ViewModel for store data class list  
+- create support fragment manager in Activity that is transaction
+
+## Recycler implement 
+
+- create a ViewHolder 
+- create a Adapter
