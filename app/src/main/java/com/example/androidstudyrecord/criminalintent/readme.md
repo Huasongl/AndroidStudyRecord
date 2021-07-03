@@ -11,3 +11,14 @@
 
 - create a ViewHolder 
 - create a Adapter
+- create a layout for list item 
+
+## summary
+
+- MainActivity
+  - CrimeListFragment
+    - CrimeListViewModel
+      - Crime Data
+    - RecyclerView
+    - Adapter
+    - ViewHolder
