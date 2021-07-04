@@ -15,4 +15,10 @@
        android:text="@string/criminalIntent_Text"/>
 
 
+   <Button
+       android:id="@+id/uiActivity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/activity_ui"/>
+
 </LinearLayout>

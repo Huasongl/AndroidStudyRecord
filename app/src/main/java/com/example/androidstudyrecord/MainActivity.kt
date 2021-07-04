@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.androidstudyrecord.criminalintent.CriminalIntentActivity
 import com.example.androidstudyrecord.databinding.ActivityMainBinding
+import com.example.androidstudyrecord.ui.UiActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var view:ActivityMainBinding
@@ -13,6 +14,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(view.root)
         view.CriminalIntent.setOnClickListener {
             CriminalIntentActivity.actionStart(this)
+        }
+        view.uiActivity.setOnClickListener {
+            UiActivity.actionStart(this)
         }
     }
 }
