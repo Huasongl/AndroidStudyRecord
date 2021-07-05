@@ -22,3 +22,4 @@
     - RecyclerView
     - Adapter
     - ViewHolder
+      - itemView

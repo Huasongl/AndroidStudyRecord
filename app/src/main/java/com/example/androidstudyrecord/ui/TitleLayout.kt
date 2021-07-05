@@ -22,5 +22,4 @@ class TitleLayout(context: Context,attrs:AttributeSet):LinearLayout(context, att
             Toast.makeText(context,"You clocked Edit button",Toast.LENGTH_SHORT).show()
         }
     }
-
 }
