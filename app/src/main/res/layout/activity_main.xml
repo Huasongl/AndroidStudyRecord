@@ -21,4 +21,10 @@
        android:layout_height="wrap_content"
        android:text="@string/activity_ui"/>
 
+   <Button
+       android:id="@+id/materialDesignActivity"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/activity_materialdesign"/>
+
 </LinearLayout>
