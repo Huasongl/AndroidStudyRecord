@@ -23,4 +23,8 @@ class MainActivity : AppCompatActivity() {
             MaterialDesign.actionStart(this)
         }
     }
+    override fun onResume() {
+        super.onResume()
+
+    }
 }

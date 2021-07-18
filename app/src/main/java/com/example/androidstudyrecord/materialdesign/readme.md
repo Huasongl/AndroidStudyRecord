@@ -1,6 +1,6 @@
 # Material Design Test
 
-## Add Toolbar in Activity
+## Add Toolbar
 
 - add a style design in themes.xml
 - assign theme in activity
@@ -19,3 +19,6 @@
   - menuInflater.inflate
 - onOptionItemSelected
   - when(item)
+  
+## Add DrawerLayout 
+
