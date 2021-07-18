@@ -16,6 +16,8 @@ class MaterialDesign : AppCompatActivity() {
     private lateinit var view : ActivityMaterialDesignBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         view = ActivityMaterialDesignBinding.inflate(layoutInflater)
         setContentView(view.root)
         setSupportActionBar(view.toolbar)
