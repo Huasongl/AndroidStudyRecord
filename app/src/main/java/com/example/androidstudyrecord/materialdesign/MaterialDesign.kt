@@ -30,6 +30,8 @@ class MaterialDesign : AppCompatActivity() {
              }
              .show()
         }
+        for (i in 0 until 50){
+        }
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar,menu)
