@@ -13,6 +13,7 @@ class CriminalIntentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         view= ActivityCriminalIntentBinding.inflate(layoutInflater)
         setContentView(view.root)
+
         val currentFragment=supportFragmentManager.findFragmentById(R.id.fragment_container)
         if(currentFragment==null){
             val fragment=CrimeListFragment.newInstance()
@@ -22,6 +23,7 @@ class CriminalIntentActivity : AppCompatActivity() {
                     .commit()
         }
     }
+
     companion object{
         fun actionStart(context:Context){
             val intent=Intent(context,CriminalIntentActivity::class.java)

@@ -12,6 +12,8 @@
 
 ### Add menu in Toolbar 
 
+### Add AppBarLayout
+
 - create menu.xml
   - add item
     - set icon,id,title,action
@@ -21,4 +23,16 @@
   - when(item)
   
 ## Add DrawerLayout 
+
+### Add NavigationView
+
+## Add FloatingActionButton
+
+### Add Snackbar
+
+## Add MaterialCardView
+
+### Add SwipeRefreshLayout
+
+
 

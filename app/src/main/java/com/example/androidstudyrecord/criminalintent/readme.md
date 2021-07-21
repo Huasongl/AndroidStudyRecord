@@ -2,7 +2,7 @@
 
 ## Fragment implement 
 
-- create a container layout for Fragment 
+- create a container layout for Fragment ，It is MainActivity Layout.
 - create a Fragment class 
 - create a ViewModel for store data class list  
 - create support fragment manager in Activity that is transaction

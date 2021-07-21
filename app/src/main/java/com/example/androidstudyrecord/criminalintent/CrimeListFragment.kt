@@ -35,7 +35,6 @@ class CrimeListFragment:Fragment() {
             titleTextView.text=this.crime.title
             dateTextView.text=this.crime.data.toString()
         }
-
         override fun onClick(v: View?) {
             Toast.makeText(context,"${crime.title}pressed!",Toast.LENGTH_SHORT).show()
         }
@@ -48,7 +47,6 @@ class CrimeListFragment:Fragment() {
             return CrimeHolder(view0)
             else return CrimeHolder(view1)
         }
-
         override fun getItemViewType(position: Int): Int {
             val crime=crimes[position]
             if(crime.requiresPolice){
@@ -57,11 +55,9 @@ class CrimeListFragment:Fragment() {
                 return 0
             }
         }
-
         override fun getItemCount(): Int {
             return crimes.size
         }
-
         override fun onBindViewHolder(holder: CrimeHolder, position: Int) {
             val crime = crimes[position]
             holder.bind(crime)
