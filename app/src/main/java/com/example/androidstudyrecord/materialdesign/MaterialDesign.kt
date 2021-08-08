@@ -9,20 +9,34 @@ import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import com.example.androidstudyrecord.R
+import com.example.androidstudyrecord.criminalintent.CrimeListFragment
+import com.example.androidstudyrecord.databinding.ActivityCriminalIntentBinding
 import com.example.androidstudyrecord.databinding.ActivityMaterialDesignBinding
 import com.google.android.material.snackbar.Snackbar
+import kotlin.concurrent.thread
 
 class MaterialDesign : AppCompatActivity() {
     private lateinit var view : ActivityMaterialDesignBinding
+//  private lateinit var view: ActivityCriminalIntentBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         view = ActivityMaterialDesignBinding.inflate(layoutInflater)
+//        view = ActivityCriminalIntentBinding.inflate(layoutInflater)
         setContentView(view.root)
         setSupportActionBar(view.toolbar)
         supportActionBar?.let {
             it.setDisplayHomeAsUpEnabled(true)
             it.setHomeAsUpIndicator(R.drawable.ic_menu)
         }
+        val currentFragment=supportFragmentManager.findFragmentById(R.id.material_container)
+        if(currentFragment==null){
+            val fragment= FruitListFragment.newInstance()
+            supportFragmentManager
+                .beginTransaction()
+                .add(R.id.material_container,fragment)
+                .commit()
+        }
+
         view.fab.setOnClickListener{view->
          Snackbar.make(view,"Data deleted", Snackbar.LENGTH_SHORT)
              .setAction("Undo"){
@@ -30,7 +44,18 @@ class MaterialDesign : AppCompatActivity() {
              }
              .show()
         }
+//        view.swipeRefreshLayout.setOnRefreshListener {
+//            refreshFruits()
+//        }
     }
+    private fun refreshFruits() {
+        thread {
+            Thread.sleep(2000)
+            runOnUiThread {
+            }
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar,menu)
         return true

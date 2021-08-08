@@ -27,4 +27,10 @@
        android:layout_height="wrap_content"
        android:text="@string/activity_materialdesign"/>
 
+   <Button
+       android:id="@+id/nightModeTest"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/activity_nightmodetest"/>
+
 </LinearLayout>

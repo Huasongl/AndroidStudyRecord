@@ -14,6 +14,9 @@
             android:theme="@style/AppTheme"
             android:label="Fruits">
         </activity>
+        <activity
+            android:name=".materialdesign.FruitActivity"
+            android:theme="@style/AppTheme" />
         <activity android:name=".ui.UiActivity" />
         <activity android:name=".criminalintent.CriminalIntentActivity" />
         <activity android:name=".MainActivity">
